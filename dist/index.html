@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yzj的简历</title>
+</head>
+<body>
+<!--添加css样式-->
+<style id="style"></style>
+<!--字在页面动-->
+<div id="demo"></div>
+<div id="divWrapper">
+    <div id="div1"></div>
+</div>
+<!--添加div-->
+
+<style>
+    *{margin: 0;padding: 0;}
+    #demo{
+        word-break: break-all;
+    }
+    #div1{
+        position:fixed;
+        right:20px;
+        top:20px;
+    }
+    #div1::before{
+        content: '';
+        display: block;
+        position: absolute;
+    }
+    #div1::after{
+        content: '';
+        display: block;
+        position: absolute;
+    }
+    <!--媒体查询-->
+    @media (max-width:500px) {
+        body{
+            color:red;
+        }
+        #demo {
+            height: 50vh;
+            overflow: auto;
+        }
+
+        #divWrapper {
+            height: 50vh;
+
+        }
+
+        #div1 {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+</style>
+<script src="/main.8f027866.js"></script>
+
+</body>
+</html>

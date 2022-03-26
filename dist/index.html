@@ -23,8 +23,9 @@
     }
     #div1{
         position:fixed;
-        right:20px;
-        top:20px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
     }
     #div1::before{
         content: '';
@@ -36,11 +37,8 @@
         display: block;
         position: absolute;
     }
-    <!--媒体查询-->
+   /* <!--媒体查询-->这种注释会出错*/
     @media (max-width:500px) {
-        body{
-            color:red;
-        }
         #demo {
             height: 50vh;
             overflow: auto;
@@ -54,11 +52,12 @@
         #div1 {
             position: relative;
             top: 0;
-            right: 0;
+            left: 50%;
+            transform:translateX(-50%);
         }
     }
 </style>
-<script src="/main.8f027866.js"></script>
+<script src="main.386e216d.js"></script>
 
 </body>
 </html>
